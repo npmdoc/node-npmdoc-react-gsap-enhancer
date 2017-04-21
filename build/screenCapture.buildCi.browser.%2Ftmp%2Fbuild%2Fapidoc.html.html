@@ -1,0 +1,337 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/azazdeaz/react-gsap-enhancer">react-gsap-enhancer (v0.3.0)</a>
+</h1>
+<h4>Use the full power of React and GSAP together</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-gsap-enhancer">module react-gsap-enhancer</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-gsap-enhancer.</span>Controller</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-gsap-enhancer.</span>createTarget</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-gsap-enhancer.</span>utils</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-gsap-enhancer.Controller">module react-gsap-enhancer.Controller</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-gsap-enhancer.Controller.default">
+            function <span class="apidocSignatureSpan">react-gsap-enhancer.Controller.</span>default
+            <span class="apidocSignatureSpan">(animationSource, options, target, onNeedReattachAllAninmations, remove)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-gsap-enhancer.createTarget">module react-gsap-enhancer.createTarget</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-gsap-enhancer.createTarget.default">
+            function <span class="apidocSignatureSpan">react-gsap-enhancer.createTarget.</span>default
+            <span class="apidocSignatureSpan">(itemTree)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-gsap-enhancer.utils">module react-gsap-enhancer.utils</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-gsap-enhancer.utils.attachAll">
+            function <span class="apidocSignatureSpan">react-gsap-enhancer.utils.</span>attachAll
+            <span class="apidocSignatureSpan">(runningAnimations)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-gsap-enhancer.utils.reattachAll">
+            function <span class="apidocSignatureSpan">react-gsap-enhancer.utils.</span>reattachAll
+            <span class="apidocSignatureSpan">(itemTree, runningAnimations)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-gsap-enhancer.utils.restoreRenderedStyles">
+            function <span class="apidocSignatureSpan">react-gsap-enhancer.utils.</span>restoreRenderedStyles
+            <span class="apidocSignatureSpan">(itemTree)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-gsap-enhancer.utils.saveRenderedStyles">
+            function <span class="apidocSignatureSpan">react-gsap-enhancer.utils.</span>saveRenderedStyles
+            <span class="apidocSignatureSpan">(itemTree)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-gsap-enhancer.utils.walkItemTree">
+            function <span class="apidocSignatureSpan">react-gsap-enhancer.utils.</span>walkItemTree
+            <span class="apidocSignatureSpan">(itemTree, callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-gsap-enhancer" id="apidoc.module.react-gsap-enhancer">module react-gsap-enhancer</a></h1>
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-gsap-enhancer.Controller" id="apidoc.module.react-gsap-enhancer.Controller">module react-gsap-enhancer.Controller</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-gsap-enhancer.Controller.default" id="apidoc.element.react-gsap-enhancer.Controller.default">
+        function <span class="apidocSignatureSpan">react-gsap-enhancer.Controller.</span>default
+        <span class="apidocSignatureSpan">(animationSource, options, target, onNeedReattachAllAninmations, remove)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Controller(animationSource, options, target, onNeedReattachAllAninmations, remove) {
+  _classCallCheck(this, Controller);
+
+  this._animationSource = animationSource;
+  this._target = target;
+  this._options = options;
+  this._onNeedReattachAllAninmations = onNeedReattachAllAninmations;
+  this._remove = remove;
+  this._commandsWaitingForAttach = [];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-gsap-enhancer.createTarget" id="apidoc.module.react-gsap-enhancer.createTarget">module react-gsap-enhancer.createTarget</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-gsap-enhancer.createTarget.default" id="apidoc.element.react-gsap-enhancer.createTarget.default">
+        function <span class="apidocSignatureSpan">react-gsap-enhancer.createTarget.</span>default
+        <span class="apidocSignatureSpan">(itemTree)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function createTarget(itemTree) {
+  var target = convertToTarget([{ children: itemTree }]);
+  //call find so target will refer to the first node which should be the root
+  return target.find();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-gsap-enhancer.utils" id="apidoc.module.react-gsap-enhancer.utils">module react-gsap-enhancer.utils</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-gsap-enhancer.utils.attachAll" id="apidoc.element.react-gsap-enhancer.utils.attachAll">
+        function <span class="apidocSignatureSpan">react-gsap-enhancer.utils.</span>attachAll
+        <span class="apidocSignatureSpan">(runningAnimations)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function attachAll(runningAnimations) {
+  runningAnimations.forEach(function (animation) {
+    return animation.attach();
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-gsap-enhancer.utils.reattachAll" id="apidoc.element.react-gsap-enhancer.utils.reattachAll">
+        function <span class="apidocSignatureSpan">react-gsap-enhancer.utils.</span>reattachAll
+        <span class="apidocSignatureSpan">(itemTree, runningAnimations)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function reattachAll(itemTree, runningAnimations) {
+  restoreRenderedStyles(itemTree);
+  attachAll(runningAnimations);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-gsap-enhancer.utils.restoreRenderedStyles" id="apidoc.element.react-gsap-enhancer.utils.restoreRenderedStyles">
+        function <span class="apidocSignatureSpan">react-gsap-enhancer.utils.</span>restoreRenderedStyles
+        <span class="apidocSignatureSpan">(itemTree)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function restoreRenderedStyles(itemTree) {
+  walkItemTree(itemTree, function (item) {
+    var savedAttributeNames = Object.keys(item.savedAttributes || {});
+    //restore the original attribute values
+    savedAttributeNames.forEach(function (name) {
+      item.node.setAttribute(name, item.savedAttributes[name]);
+    });
+    //remove the attributes added after the render
+    for (var i = 0; i &lt; item.node.attributes.length; ++i) {
+      var name = item.node.attributes[i].name;
+      if (savedAttributeNames.indexOf(name) === -1) {
+        item.node.removeAttribute(name);
+        --i;
+      }
+    }
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-gsap-enhancer.utils.saveRenderedStyles" id="apidoc.element.react-gsap-enhancer.utils.saveRenderedStyles">
+        function <span class="apidocSignatureSpan">react-gsap-enhancer.utils.</span>saveRenderedStyles
+        <span class="apidocSignatureSpan">(itemTree)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function saveRenderedStyles(itemTree) {
+  walkItemTree(itemTree, function (item) {
+    item.savedAttributes = {};
+    for (var i = 0; i &lt; item.node.attributes.length; ++i) {
+      var attribute = item.node.attributes[i];
+      var name = attribute.name;
+      var value = attribute.value;
+      item.savedAttributes[name] = value;
+    }
+    item.node._gsTransform = null;
+    item.node._gsTweenID = null;
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-gsap-enhancer.utils.walkItemTree" id="apidoc.element.react-gsap-enhancer.utils.walkItemTree">
+        function <span class="apidocSignatureSpan">react-gsap-enhancer.utils.</span>walkItemTree
+        <span class="apidocSignatureSpan">(itemTree, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function walkItemTree(itemTree, callback) {
+  function walk(map) {
+    map.forEach(function (item) {
+      if (item.node) {
+        callback(item);
+        if (item.children) {
+          walk(item.children);
+        }
+      }
+    });
+  }
+  walk(itemTree);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
